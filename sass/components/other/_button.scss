@@ -50,6 +50,8 @@
   }
 }
 .button-menu {
+  position: relative;
+  z-index: 20;
   background-color: inherit;
   @extend %flexCenter;
   height: 40px;

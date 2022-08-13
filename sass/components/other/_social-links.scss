@@ -38,3 +38,19 @@
 .socials__icon--white {
   fill: map-get($colors, white-prymary-full);
 }
+.window-menu__social-link {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+
+  color: map-get($colors, accent-color);
+
+  &:not(:last-child)::after {
+    content: '';
+    margin: 0 10px;
+    border: 1px solid map-get($colors, menu_border);
+  }
+}

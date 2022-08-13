@@ -3,7 +3,6 @@ body {
   color: map-get($colors, prymary-text);
   font-size: 14px;
 }
-
 .container {
   width: 450px;
   padding-left: 15px;
@@ -21,6 +20,9 @@ body {
     width: 1200px;
   }
 }
+.container--flex {
+  @extend %flexCenterLine;
+}
 .section-grey {
   background-color: map-get($colors, grey-bkg-bright);
 }
@@ -33,6 +35,9 @@ body {
 }
 .box-flex {
   display: flex;
+}
+.big-box {
+  flex: 1 1 auto;
 }
 .other-title {
   @extend %CenterText;
