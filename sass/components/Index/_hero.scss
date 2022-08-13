@@ -1,0 +1,23 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: url(../images/Overlay.png), url(../images/backgroud.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__title {
+  display: block;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 694px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: map-get($colors, white-prymary-full);
+  letter-spacing: 0.06em;
+}

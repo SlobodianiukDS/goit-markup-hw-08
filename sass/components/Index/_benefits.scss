@@ -1,0 +1,26 @@
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits__list {
+  width: calc((100% - 90px) / 4);
+}
+.benefits__box-icon {
+  @extend %flexCenter;
+  margin-bottom: 30px;
+
+  background-color: map-get($colors, grey-bkg-bright);
+  border-radius: 4px;
+}
+.benefits__tittle {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefits__text {
+  margin-top: 10px;
+
+  font-weight: 400;
+  line-height: 1.71;
+  color: map-get($colors, secondary-text);
+}

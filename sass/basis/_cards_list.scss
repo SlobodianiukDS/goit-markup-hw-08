@@ -1,0 +1,8 @@
+.cards {
+  display: flex;
+}
+.cards__list {
+  & + & {
+    margin-left: 30px;
+  }
+}

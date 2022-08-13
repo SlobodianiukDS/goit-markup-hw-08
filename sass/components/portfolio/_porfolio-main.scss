@@ -1,0 +1,72 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filter {
+  margin-bottom: 50px;
+}
+.filter__box {
+  display: flex;
+  justify-content: center;
+}
+.filter__list:not(:last-child) {
+  margin-right: 8px;
+}
+.jobs__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.jobs__list {
+  border: 1px solid map-get($colors, grey-border);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0),
+    0px 0px 0px rgba(0, 0, 0, 0);
+
+  cursor: pointer;
+
+  @include trans(box-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px map-get($colors, black-opacity);
+  }
+}
+.description {
+  padding: 20px 24px;
+}
+.description__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+.description__text {
+  margin-top: 4px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  color: map-get($colors, secondary-text);
+}
+.jobs__description-text {
+  position: absolute;
+  left: 0;
+  top: 0%;
+  transform: translatey(101%);
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: map-get($colors, white-prymary-full);
+  background-color: map-get($colors, blue-bkg);
+
+  @include trans(transform);
+  .jobs__list:hover &,
+  .jobs__list:focus & {
+    transform: translatey(0%);
+  }
+}

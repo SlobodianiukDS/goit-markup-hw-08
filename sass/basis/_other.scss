@@ -1,0 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: map-get($colors, prymary-text);
+  font-size: 14px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section-grey {
+  background-color: map-get($colors, grey-bkg-bright);
+}
+.section-dark {
+  background-color: map-get($colors, grey-bkg-dark);
+}
+.box {
+  display: block;
+  position: relative;
+}
+.box-flex {
+  display: flex;
+}
+.other-title {
+  @extend %CenterText;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.66;
+}
+.text-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.is-hidden {
+  /* visibility: hidden; */
+  opacity: 0;
+  pointer-events: none;
+
+  @include trans2(transform, opacity);
+}
+.overhid {
+  overflow: hidden;
+}

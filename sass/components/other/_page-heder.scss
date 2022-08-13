@@ -1,0 +1,51 @@
+.header {
+  @include border(map-get($colors, grey-border));
+}
+.container--flex {
+  @extend %flexCenterLine;
+}
+.navigation-box {
+  @extend %flexCenterLine;
+}
+.navigation {
+  @extend %flexCenterLine;
+}
+.navigation__list {
+  & + & {
+    margin-left: 50px;
+  }
+}
+.navigation__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: map-get($colors, prymary-text);
+
+  @include trans;
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, accent-color);
+  }
+}
+.navigation__link--visited {
+  color: map-get($colors, accent-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+
+    background: map-get($colors, accent-color);
+    border-radius: 2px;
+  }
+}

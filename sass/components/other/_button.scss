@@ -1,0 +1,93 @@
+.button {
+  @extend %flexCenterLine;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: map-get($colors, white-prymary-full);
+  background-color: map-get($colors, accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px map-get($colors, none);
+
+  @include trans2(background-color, box-shadow);
+
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, accent-plus);
+    box-shadow: 0px 4px 4px map-get($colors, black-opacity);
+  }
+}
+.button__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: map-get($colors, white-prymary-full);
+}
+.button-close {
+  position: absolute;
+  right: 1.5%;
+  top: 1.4%;
+
+  @extend %flexCenter;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: map-get($colors, white-prymary-full);
+  border: 1px solid map-get($colors, social-bkg-dark);
+
+  @include trans2(background-color, color);
+
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, accent-plus);
+    color: map-get($colors, white-prymary-full);
+  }
+}
+
+.hero__button {
+  padding: 10px 32px;
+  min-width: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.footer__button {
+  padding: 10px 32px;
+  margin-left: 12px;
+}
+.modal__button {
+  margin: 30px auto 0;
+  padding: 10px 55px;
+}
+.filter__button {
+  padding: 6px 22px;
+  min-width: 72px;
+
+  font-weight: 500;
+  color: map-get($colors, prymary-text);
+  background-color: map-get($colors, grey-bkg-bright);
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  box-shadow: 0px 0px 0px map-get($colors, none);
+
+  @include trans3();
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, white-prymary-full);
+    background-color: map-get($colors, accent-color);
+    box-shadow: 0px 4px 4px map-get($colors, black-opacity);
+  }
+
+  &--visit {
+    color: map-get($colors, white-prymary-full);
+    background-color: map-get($colors, accent-color);
+    box-shadow: 0px 4px 4px map-get($colors, black-opacity);
+  }
+}

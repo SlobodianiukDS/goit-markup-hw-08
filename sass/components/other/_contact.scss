@@ -1,0 +1,52 @@
+.contact {
+  @extend %flexCenterLine;
+  margin-left: auto;
+}
+.contact--footer {
+  display: inline;
+  margin: 0;
+}
+.contact__list:not(:last-child) {
+  margin-right: 50px;
+}
+.contact__list--none:not(:last-child) {
+  margin: 0;
+}
+.contact__link {
+  @extend %flexCenterLine;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.142;
+  color: map-get($colors, secondary-text);
+  @include trans();
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, accent-color);
+  }
+}
+.contact__link--footer {
+  display: inline-block;
+
+  font-weight: 400;
+  line-height: 1.71;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.contact__link--white {
+  color: map-get($colors, white-prymary-full);
+}
+.contact__icon {
+  fill: map-get($colors, secondary-text);
+  margin-right: 10px;
+
+  @include trans(fill);
+
+  .contact__link:hover &,
+  .contact__link:focus & {
+    fill: map-get($colors, accent-color);
+  }
+}

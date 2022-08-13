@@ -1,0 +1,15 @@
+@mixin trans($type: color) {
+  transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin trans2($type: color, $typetwo: background-color) {
+  transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $typetwo 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin trans3($type: color, $type2: background-color, $type3: box-shadow) {
+  transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type2 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $type3 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin border($color) {
+  border: 1px solid $color;
+} ;

@@ -1,0 +1,40 @@
+.socials {
+  display: flex;
+}
+.socials__list {
+  & + & {
+    margin-left: 10px;
+  }
+}
+.socials__link {
+  @extend %flexCenter;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: map-get($colors, white-prymary-full);
+  @include trans(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, accent-color);
+  }
+}
+.socials__link--dark {
+  background-color: map-get($colors, social-bkg-dark);
+}
+.socials__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: map-get($colors, fill-icon);
+  @include trans(fill);
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: map-get($colors, white-prymary-full);
+  }
+}
+.socials__icon--white {
+  fill: map-get($colors, white-prymary-full);
+}

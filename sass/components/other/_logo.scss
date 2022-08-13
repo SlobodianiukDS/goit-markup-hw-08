@@ -1,0 +1,29 @@
+.logo-box {
+  margin-right: 94px;
+}
+.logo__first-half {
+  @extend %logo;
+
+  color: map-get($colors, accent-color);
+  @include trans();
+
+  .logo:hover &,
+  .logo:focus & {
+    color: map-get($colors, secondary-text);
+  }
+}
+.logo__second-half {
+  @extend %logo;
+
+  color: map-get($colors, black-full);
+  @include trans();
+
+  .logo:hover &,
+  .logo:focus & {
+    color: map-get($colors, secondary-text);
+  }
+}
+.logo__second-half--white {
+  color: map-get($colors, white-prymary-full);
+  @include trans();
+}

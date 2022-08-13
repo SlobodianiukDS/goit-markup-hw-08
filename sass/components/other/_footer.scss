@@ -1,0 +1,25 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__address {
+  margin-top: 20px;
+}
+.footer__box-social {
+  margin-left: 70px;
+  margin-top: 16px;
+}
+.footer__box-subscribe {
+  margin-left: 92px;
+  margin-top: 16px;
+}
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: map-get($colors, white-prymary-full);
+}

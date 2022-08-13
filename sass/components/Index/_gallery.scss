@@ -1,0 +1,24 @@
+.gallery {
+  padding-bottom: 94px;
+}
+.gallery__title {
+  margin-bottom: 50px;
+}
+.gallery__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  @extend %flexCenter;
+
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: map-get($colors, white-prymary-full);
+  background-color: map-get($colors, gallery-bkg-text);
+}
