@@ -1,8 +1,15 @@
 .header {
-  @include border(map-get($colors, grey-border));
+  @media screen and (min-width: 768px) {
+    @include border(map-get($colors, grey-border));
+  }
 }
 .container--flex {
   @extend %flexCenterLine;
+}
+.menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .navigation-box {
   @extend %flexCenterLine;
@@ -47,5 +54,11 @@
 
     background: map-get($colors, accent-color);
     border-radius: 2px;
+  }
+}
+.header__menu-mobile {
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

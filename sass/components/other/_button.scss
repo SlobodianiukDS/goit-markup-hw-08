@@ -49,6 +49,36 @@
     color: map-get($colors, white-prymary-full);
   }
 }
+.button-menu {
+  background-color: inherit;
+  @extend %flexCenter;
+  height: 40px;
+  width: 40px;
+}
+.button-menu__icon {
+  width: 40px;
+  height: 40px;
+
+  fill: map-get($colors, prymary-text);
+  .button-menu:hover &,
+  .button-menu:focus & {
+    fill: map-get($colors, accent-color);
+  }
+
+  &--menu {
+    display: block;
+  }
+  &--close {
+    display: none;
+  }
+
+  .button-menu.is-open &--menu {
+    display: none;
+  }
+  .button-menu.is-open &--close {
+    display: block;
+  }
+}
 
 .hero__button {
   padding: 10px 32px;

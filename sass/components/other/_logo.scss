@@ -1,5 +1,7 @@
 .logo-box {
-  margin-right: 94px;
+  @media screen and (min-width: 480px) {
+    margin-right: 94px;
+  }
 }
 .logo__first-half {
   @extend %logo;
