@@ -1,14 +1,17 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
   width: 100%;
 
   background-image: url(../images/Overlay.png), url(../images/backgroud.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media screen and (max-width: 480px) {
-    width: 450px;
+    width: 480px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
   }
 }
 .hero__title {
@@ -17,6 +20,7 @@
 
   margin-left: auto;
   margin-right: auto;
+  width: 420px;
 
   font-weight: 900;
   font-size: 26px;
@@ -25,7 +29,8 @@
   color: map-get($colors, white-prymary-full);
   letter-spacing: 0.06em;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
