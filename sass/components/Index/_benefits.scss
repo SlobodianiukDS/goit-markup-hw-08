@@ -1,9 +1,17 @@
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .benefits__list {
-  width: calc((100% - 90px) / 4);
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .benefits__box-icon {
   @extend %flexCenter;

@@ -1,4 +1,5 @@
 .logo-box {
+  padding: 16px 0;
   @media screen and (min-width: 480px) {
     margin-right: 94px;
   }
@@ -13,6 +14,10 @@
   .logo:focus & {
     color: map-get($colors, secondary-text);
   }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 .logo__second-half {
   @extend %logo;
@@ -23,6 +28,10 @@
   .logo:hover &,
   .logo:focus & {
     color: map-get($colors, secondary-text);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.192;
   }
 }
 .logo__second-half--white {

@@ -1,15 +1,11 @@
 .hero {
   padding: 118px 0;
-  width: 100%;
 
   background-image: url(../images/Overlay.png), url(../images/backgroud.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen and (max-width: 480px) {
-    width: 480px;
-  }
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
   }

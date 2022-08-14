@@ -1,8 +1,24 @@
 .cards {
-  display: flex;
+  display: inline;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .cards__list {
-  & + & {
-    margin-left: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & + & {
+      margin-left: 30px;
+    }
   }
 }

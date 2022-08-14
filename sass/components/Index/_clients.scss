@@ -1,12 +1,30 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .clients__title {
-  margin-bottom: 48px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 48px;
+  }
+}
+.clients__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 .clients__list {
-  width: calc((100% - 150px) / 6);
+  display: block;
 }
 .clients__link {
   @extend %flexCenter;

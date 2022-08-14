@@ -2,16 +2,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__container {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
 .footer__address {
   margin-top: 20px;
 }
 .footer__box-social {
-  margin-left: 70px;
-  margin-top: 16px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 16px;
+  }
 }
 .footer__box-subscribe {
-  margin-left: 92px;
-  margin-top: 16px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 92px;
+    margin-top: 16px;
+  }
 }
 .footer__title {
   margin-bottom: 20px;
