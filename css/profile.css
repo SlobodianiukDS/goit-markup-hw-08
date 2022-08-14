@@ -211,7 +211,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  background-color: aqua;
 }
 @media screen and (max-width: 480px) {
   .container {
@@ -252,6 +251,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  max-height: 514px;
 }
 
 .other-title {
@@ -383,8 +383,6 @@ body {
 }
 
 .button-menu__icon {
-  width: 40px;
-  height: 40px;
   fill: #212121;
 }
 .button-menu:hover .button-menu__icon, .button-menu:focus .button-menu__icon {
@@ -660,22 +658,18 @@ body {
 }
 
 .contact {
-  display: inline-block;
-}
-@media screen and (max-width: 768px) {
-  .contact {
-    margin-top: auto;
-  }
+  display: block;
 }
 @media screen and (min-width: 768px) {
+  .contact {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
   .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: auto;
   }
 }
 
@@ -684,22 +678,17 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .contact__list:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.contact__list--none:not(:last-child) {
-  margin: 0;
-}
-
 @media screen and (max-width: 767px) {
   .contact__list:not(:last-child) {
     margin-bottom: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .contact__list:not(:last-child) {
     margin-right: 50px;
   }
@@ -725,17 +714,24 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 14px;
-    line-height: 1.142;
+    color: #757575;
+    font-size: 12px;
+    line-height: calk(14/12);
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.142;
   }
 }
 
 .contact__link--momile {
   font-size: 24px;
   line-height: 1.1666666667;
-  color: #757575;
 }
 
 .contact__link--footer {
@@ -801,19 +797,22 @@ body {
   fill: #ffffff;
 }
 
-.window-menu__social-link {
+.window-menu__social-list {
   position: relative;
   display: inline-block;
+}
+.window-menu__social-list:not(:last-child)::after {
+  content: "";
+  margin: 0 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.window-menu__social-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
-}
-.window-menu__social-link:not(:last-child)::after {
-  content: "";
-  margin: 0 10px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,10 +1,15 @@
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 100%;
 
   background-image: url(../images/Overlay.png), url(../images/backgroud.jpg);
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
 .hero__title {
   display: block;
@@ -12,12 +17,16 @@
 
   margin-left: auto;
   margin-right: auto;
-  width: 694px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   text-transform: uppercase;
   color: map-get($colors, white-prymary-full);
   letter-spacing: 0.06em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

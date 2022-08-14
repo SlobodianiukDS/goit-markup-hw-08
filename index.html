@@ -62,8 +62,8 @@
           </ul>
         </div>
         <div class="header__menu-mobile">
-          <button class="button-menu" type="button">
-            <svg class="button-menu__icon">
+          <button class="button-menu" type="button" data-menu-button>
+            <svg width="40" height="40" class="button-menu__icon">
               <use
                 class="button-menu__icon--menu"
                 href="./images/icons.svg#menu"
@@ -74,7 +74,7 @@
               ></use>
             </svg>
           </button>
-          <div class="window-menu">
+          <div class="window-menu is-hidden" data-menu>
             <div class="window-menu__box">
               <div class="big-box">
                 <ul class="navigation">
@@ -109,17 +109,25 @@
                 </li>
               </ul>
               <ul class="window-menu__social">
-                <li class="window-menu__social-link">Instagram</li>
-                <li class="window-menu__social-link">Twitter</li>
-                <li class="window-menu__social-link">Facebook</li>
-                <li class="window-menu__social-link">LinkedIn</li>
+                <li class="window-menu__social-list">
+                  <a class="window-menu__social-link" href="">Instagram</a>
+                </li>
+                <li class="window-menu__social-list">
+                  <a class="window-menu__social-link" href="">Twitter</a>
+                </li>
+                <li class="window-menu__social-list">
+                  <a class="window-menu__social-link" href="">Facebook</a>
+                </li>
+                <li class="window-menu__social-list">
+                  <a class="window-menu__social-link" href="">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- 
+
     <main>
       <section class="hero">
         <div class="container">
@@ -130,7 +138,7 @@
         </div>
       </section>
 
-      <section class="benefits">
+      <!-- <section class="benefits">
         <div class="container">
           <h2 class="text-hidden">Наши преимущества</h2>
           <ul class="cards">
@@ -184,9 +192,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="gallery">
+      <!-- <section class="gallery">
         <div class="container">
           <h2 class="gallery__title other-title">Чем мы занимаемся</h2>
           <ul class="cards">
@@ -228,9 +236,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="teams section-grey">
+      <!-- <section class="teams section-grey">
         <div class="container">
           <h2 class="other-title teams__title">Наша команда</h2>
           <ul class="cards">
@@ -419,9 +427,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="other-title clients__title">Постоянные клиенты</h2>
           <ul class="cards">
@@ -470,10 +478,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer section-dark">
+    <!-- <footer class="footer section-dark">
       <div class="container box-flex">
         <div class="footer__box-contact">
           <a href="./index.html" class="logo" lang="en"
@@ -640,5 +648,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

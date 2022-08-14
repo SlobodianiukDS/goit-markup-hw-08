@@ -58,10 +58,8 @@
   width: 40px;
 }
 .button-menu__icon {
-  width: 40px;
-  height: 40px;
-
   fill: map-get($colors, prymary-text);
+
   .button-menu:hover &,
   .button-menu:focus & {
     fill: map-get($colors, accent-color);
