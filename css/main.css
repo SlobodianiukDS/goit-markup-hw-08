@@ -627,11 +627,17 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 20px;
+  font-size: 12px;
+  line-height: 1.1666666667;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .agreement__input-label {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .input-comments {
@@ -699,7 +705,6 @@ body {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-left: 12px;
   background-size: contain;
   background-origin: padding-box;
   background-image: url(../images/icon_check.svg);
@@ -714,6 +719,11 @@ body {
 .input-agreement:checked ~ .agreement__icon {
   border-color: #2196f3;
   background-color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .agreement__icon {
+    margin-left: 12px;
+  }
 }
 
 .agreement__terms {
@@ -1321,7 +1331,7 @@ body {
 
 .modal__box {
   opacity: 1;
-  width: 528px;
+  width: 450px;
   padding: 40px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1331,6 +1341,11 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal__box {
+    width: 528px;
+  }
 }
 
 .modal.is-hidden .box-modal-form {
@@ -1346,6 +1361,7 @@ body {
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 label.box:not(:last-child) {

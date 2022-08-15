@@ -613,11 +613,17 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 20px;
+  font-size: 12px;
+  line-height: 1.1666666667;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .agreement__input-label {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .input-comments {
@@ -685,7 +691,6 @@ body {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-left: 12px;
   background-size: contain;
   background-origin: padding-box;
   background-image: url(../images/icon_check.svg);
@@ -700,6 +705,11 @@ body {
 .input-agreement:checked ~ .agreement__icon {
   border-color: #2196f3;
   background-color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .agreement__icon {
+    margin-left: 12px;
+  }
 }
 
 .agreement__terms {

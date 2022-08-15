@@ -83,12 +83,18 @@
 
   margin-top: 20px;
 
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   color: map-get($colors, secondary-tex);
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .input-comments {
@@ -140,7 +146,6 @@
 
   width: 16px;
   height: 16px;
-  margin-left: 12px;
 
   background-size: contain;
   background-origin: padding-box;
@@ -158,6 +163,10 @@
   .input-agreement:checked ~ & {
     border-color: map-get($colors, accent-color);
     background-color: map-get($colors, accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 .agreement__terms {
