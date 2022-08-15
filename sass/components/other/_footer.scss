@@ -10,10 +10,28 @@
 .footer__address {
   margin-top: 20px;
 }
+.footer__box-contact {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
 .footer__box-social {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-top: 16px;
+  }
+}
+.box-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .footer__box-subscribe {

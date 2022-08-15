@@ -89,7 +89,11 @@
 }
 .footer__button {
   padding: 10px 32px;
-  margin-left: 12px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .modal__button {
   margin: 30px auto 0;
