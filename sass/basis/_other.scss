@@ -71,6 +71,12 @@ body {
 
   @include trans2(transform, opacity);
 }
+.is-menu-hidden {
+  opacity: 0;
+  pointer-events: none;
+  @include trans2(transform, opacity);
+}
+
 .overhid {
   overflow: hidden;
 }

@@ -5,5 +5,6 @@
   menuBtnRef.addEventListener('click', () => {
     menuBtnRef.classList.toggle('is-open');
     menuRef.classList.toggle('is-hidden');
+    menuRef.classList.toggle('menu-open');
   });
 })();
