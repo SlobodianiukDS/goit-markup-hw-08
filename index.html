@@ -15,7 +15,7 @@
     <!-- шрифты -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-modal-body>
     <header class="header section box">
       <div class="container container--flex">
         <div class="logo-box">
@@ -628,7 +628,6 @@
         </div>
       </div>
     </footer>
-
     <div data-modal class="modal is-hidden">
       <div class="modal__box">
         <button data-modal-close class="button-close" type="button">x</button>
@@ -692,7 +691,8 @@
                 <span class="agreement__text"
                   >Соглашаюсь с рассылкой и принимаю</span
                 >
-                <span class="agreement__icon"> </span>
+                <span class="agreement__icon">
+                </span>
               </span>
             </label>
           </div>

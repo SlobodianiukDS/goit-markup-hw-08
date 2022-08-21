@@ -149,6 +149,7 @@
 
   background-size: contain;
   background-origin: padding-box;
+  background-position: center;
   background-image: url(../images/icon_check.svg);
 
   border: 2px solid map-get($colors, prymary-text);

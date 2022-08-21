@@ -2,6 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: map-get($colors, prymary-text);
   font-size: 14px;
+  // overflow-y: hidden;
 }
 .section {
   width: 100%;

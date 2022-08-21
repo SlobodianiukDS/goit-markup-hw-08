@@ -716,6 +716,7 @@ body {
   height: 16px;
   background-size: contain;
   background-origin: padding-box;
+  background-position: center;
   background-image: url(../images/icon_check.svg);
   border: 2px solid #212121;
   border-radius: 2px;
@@ -1135,10 +1136,17 @@ body {
   height: 100%;
   left: 0;
   top: 0;
+  overflow-y: scroll;
+  z-index: 30;
   background: rgba(0, 0, 0, 0.15);
 }
 
+.not-hidden {
+  overflow-y: hidden;
+}
+
 .modal__box {
+  top: 300px;
   opacity: 1;
   width: 450px;
   padding: 40px;

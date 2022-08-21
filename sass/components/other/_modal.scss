@@ -4,11 +4,18 @@
   height: 100%;
   left: 0;
   top: 0;
+  overflow-y: scroll;
+  z-index: 30;
 
   background: map-get($colors, black-opacity);
 }
+.not-hidden {
+  overflow-y: hidden;
+}
+
 .modal__box {
   @extend %positCenter;
+  top: 300px;
   opacity: 1;
 
   width: 450px;
