@@ -1146,7 +1146,6 @@ body {
 }
 
 .modal__box {
-  top: 300px;
   opacity: 1;
   width: 450px;
   padding: 40px;
@@ -1162,6 +1161,11 @@ body {
 @media screen and (min-width: 1200px) {
   .modal__box {
     width: 528px;
+  }
+}
+@media screen and (max-height: 588px) {
+  .modal__box {
+    top: 300px;
   }
 }
 
